@@ -6,6 +6,7 @@ ruby '2.4.1'
 gem 'devise', '~> 4.2'
 gem 'rb-readline'
 gem 'awesome_print', '~> 1.8'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4'
 # Use sqlite3 as the database for Active Record
