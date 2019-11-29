@@ -1,0 +1,75 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2019-11-28 10:13:59.394080'
+    - '2019-11-28 10:13:59.394080'
+
+---
+links:
+  columns:
+  - id
+  - title
+  - url
+  - created_at
+  - updated_at
+  - user_id
+  records: 
+  - - 1
+    - Google - Search anything!
+    - www.google.com
+    - '2019-11-28 10:17:30.524124'
+    - '2019-11-28 14:53:36.577606'
+    - 1
+  - - 2
+    - Facebook - Search People
+    - www.fb.com
+    - '2019-11-28 10:17:45.623303'
+    - '2019-11-28 14:53:49.833124'
+    - 1
+  - - 3
+    - Twitter - Search Celebs!!
+    - www.twitter.com
+    - '2019-11-28 11:55:31.970594'
+    - '2019-11-28 14:54:15.188515'
+    - 1
+  - - 4
+    - 'Nestaway - Searching for house, this is the right place. '
+    - www.nestaway.com
+    - '2019-11-28 14:50:16.497832'
+    - '2019-11-28 14:50:16.497832'
+    - 1
+  - - 6
+    - Quora - Ask questions!!
+    - www.quora.com
+    - '2019-11-29 07:47:28.426762'
+    - '2019-11-29 07:47:28.426762'
+    - 1
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - nkj.chd@gmail.com
+    - "$2a$11$KVZFvNnIbKF0pwk21dC9R.GUFSU/V41nW7J7a4WXiW9QNTNIa64pW"
+    - 22b2f65fdb37ac54c67b36710c850ab5aa4d1f1a83dd79e25ed3fcf1dd1c339b
+    - '2019-11-29 07:47:57.628790'
+    - 
+    - '2019-11-28 11:12:15.684190'
+    - '2019-11-29 07:47:57.629209'
