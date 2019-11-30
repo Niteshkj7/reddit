@@ -14,6 +14,7 @@ gem 'yaml_db'
 gem 'rails', '~> 5.2.4'
 # Use pg as the database for Active Record
 gem 'pg', '~> 0.18.4'
+gem 'mysql2', '~> 0.5.2'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
