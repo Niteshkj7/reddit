@@ -7,7 +7,7 @@ class LinksController < ApplicationController
   def index
     @links = Link.all
     if params["commit"]
-      criteria = params["name"]
+      criteria = params["name"].capitalize
       @links = Link.where('title LIKE ?', "%#{criteria}%")
     end
   end
