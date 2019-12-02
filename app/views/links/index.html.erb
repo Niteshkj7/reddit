@@ -1,8 +1,16 @@
-<% @links.each do |link| %>
-<div class="link row clearfix">
-  <h2>
-    <%= link_to link.title, link %><br>
-    <small class="author">Submitted <%= time_ago_in_words(link.created_at) %> by <%= link.user.email %></small>
-  </h2>
+<div class="form-group">
+  <% if user_signed_in? -%>
+    <%= simple_form_for :search, url: root_path, method: "GET", html: { class: 'form-inline' } do |f| %>
+      <input type="name" class="form-control" id="name" placeholder="Search here" name="name">
+      <%= f.submit "Search", class: "btn btn-primary" %>
+    <% end %>
+  <% end %>
 </div>
+<% @links.each do |link| %>
+  <div class="link row clearfix">
+    <h2>
+      <%= link_to link.title, link %><br>
+      <small class="author">Submitted <%= time_ago_in_words(link.created_at) %> by <%= link.user.email %></small>
+    </h2>
+  </div>
 <% end %>
