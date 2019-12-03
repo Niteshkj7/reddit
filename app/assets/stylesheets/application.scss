@@ -27,6 +27,12 @@
   }
 }
 
+html body {
+    background: url('new.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 #main_content {
   #content {
     float: none;
