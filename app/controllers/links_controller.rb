@@ -5,10 +5,10 @@ class LinksController < ApplicationController
   # GET /links
   # GET /links.json
   def index
-    @links = Link.all
+    @links = Link.paginate(page: params[:page], per_page: 5)
     if params["commit"]
       criteria = params["name"].capitalize
-      @links = Link.where('title LIKE ?', "%#{criteria}%")
+      @links = Link.paginate(page: params[:page], per_page: 5).where('title LIKE ?', "%#{criteria}%")
     end
   end
 
