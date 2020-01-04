@@ -12,6 +12,8 @@ gem 'yaml_db'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'simple_form'
 gem 'will_paginate', '~> 3.1.0'
+gem 'simple_form'
+gem 'record_tag_helper', '~> 1.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4'
