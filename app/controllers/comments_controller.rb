@@ -1,10 +1,11 @@
 class CommentsController < ApplicationController
   before_action :set_comment, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
 
   # GET /comments
   # GET /comments.json
   def index
-    @comments = Comment.all
+    redirect_to root_path
   end
 
   # GET /comments/1
@@ -14,7 +15,9 @@ class CommentsController < ApplicationController
 
   # GET /comments/new
   def new
-    @comment = Comment.new
+    if !current_user?
+      redirect_to @link
+    end
   end
 
   # GET /comments/1/edit
